@@ -7,11 +7,11 @@ Be aware, due to the use of free limited usage Google API keys, **nearby places 
 
 For security reasons, the **Facebook OAuth Login-in system will not work on a build running on localhost**. For this reason, to see all of the app's features, it is advised to use the hosted version on heroku  
 
-##Introduction
+## Introduction
 goEat is a service that provides a list of nearby places where you can get your mastication on. Using your current Geolocation,
 goEat finds restaurants and places providing takeaway and delivery options, that are within 10km of you.
 
-##Project Architecture
+## Project Architecture
 
 The goEat API itself is written in [Go](https://golang.org/) using the [Macaron Framework](https://go-macaron.com/).
 It has been built and packaged for deployment to the [Heroku PaaS](https://www.heroku.com/), which relies on [GoDep](https://github.com/tools/godep) for package management.
@@ -22,7 +22,7 @@ library. User's can sign up/in using their Facebook account if they want to keep
 
 ![Architecture Diagram](https://cloud.githubusercontent.com/assets/10116669/20705788/4dbd198a-b61c-11e6-968b-e94ca1451d97.png)
 
-###Technologies
+### Technologies
 
 * [Go](https://golang.org/)
 * [Macaron Framework](https://go-macaron.com/)
@@ -47,9 +47,9 @@ It is assumed that:
 	* goEatAPI.exe
 
 
-####Endpoints
+#### Endpoints
 
-#####Google Places Endpoints
+##### Google Places Endpoints
 ```
 	/maps
 		/nearby
@@ -124,7 +124,7 @@ Which would return an array of Places, each roughly resembling the following:
 ]
 ```
 
-#####The Google Maps Directions Endpoint
+##### The Google Maps Directions Endpoint
 ```
 	/direction/{lat},{long},{id}
 ```
@@ -216,7 +216,7 @@ The directions endpoint consumes the user's current geolocation and the destinat
 
 
 
-#####goEat User Endpoints
+##### goEat User Endpoints
 
 User profile information is managed using the following endpoints:
 ```
