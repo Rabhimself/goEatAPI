@@ -33,7 +33,7 @@ library. User's can sign up/in using their Facebook account if they want to keep
 * [Google Maps](https://developers.google.com/maps/)
 * [Facebook Login](https://developers.facebook.com/products/login)
 
-####Deployment
+#### Deployment
 It is assumed that:
 * [GO](https://golang.org/dl/) is properly installed in the environment that will be running the goEat! server. 
 * The user has adequate knowledge of Git
